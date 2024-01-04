@@ -44,6 +44,7 @@ const server = http.createServer((req, res) => {
   } else if (pathName === "/api") {
     res.writeHead(200, {
       "Content-Type": "application/json",
+      "my-own-header": "node practice",
       "Access-Control-Allow-Origin": "*",
     });
     res.end(data);
